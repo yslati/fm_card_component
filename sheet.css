@@ -1,0 +1,114 @@
+@import url('https: //fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+	width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    margin: auto;
+	width: 1152px;
+	height: 50%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+}
+
+.card--text {
+	max-width: 67rem;
+    width: 50%;
+    display: flex;
+	padding: 70px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 38px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.description {
+	color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.8;
+	margin-top: 30px;
+}
+
+.info {
+    display: flex;
+    color: hsl(0, 0%, 100%);
+    justify-content: space-between;
+	margin-top: auto;
+    font-size: 16px;
+	letter-spacing: 2px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+	margin-right: 50px;
+}
+
+.sub_des {
+    margin-top: 5px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.card--image {
+    width: 50%;
+	min-width: 50%;
+    border-radius: 0 10px 10px 0;
+    background-image: url("images/image-header-desktop.jpg");
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 375px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 80%;
+    }
+	.card--text {
+		width: auto;
+		height: 70%;
+		padding: 30px;
+		text-align: center;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.description {
+		margin-top: 15px;
+		font-size: 12px;
+	}
+	.info {
+		flex-direction: column;
+		display: flex;
+		margin-top: 20px;
+		margin-right: 0;
+		flex: 1;
+	}
+	.card--image {
+		width: 100%;
+		height: 30%;
+		min-height: 30%;
+	}
+}
